@@ -2,6 +2,7 @@ class Grass extends Creature {
     constructor(x, y) {
         super(x, y);
         this.multiply = Math.round(Math.random() * 3);
+        this.index = 1;
     }
 
     chooseCell(character) {

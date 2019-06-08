@@ -3,6 +3,7 @@ class Poisygrass extends Creature {
         super(x, y);
         this.multiply = Math.round(Math.random() * 1);
         this.counter = 0;
+        this.index = 5;
         this.directions = [
             [this.x, this.y + 2],
             [this.x, this.y - 2],

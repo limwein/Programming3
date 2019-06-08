@@ -2,6 +2,7 @@ class GrassEater extends Creature {
     constructor(x, y) {
         super(x, y);
         this.energy = Math.round(Math.random() * 7);
+        this.index = 2;
         this.directions = [
             [this.x - 1, this.y - 1],
             [this.x, this.y - 1],

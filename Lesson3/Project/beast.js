@@ -2,6 +2,7 @@ class Beast extends Creature {
     constructor(x, y) {
         super(x, y);
         this.energy = 0;
+        this.index = 4;
         this.directions = [
             [this.x, this.y + 2],
             [this.x, this.y - 2],

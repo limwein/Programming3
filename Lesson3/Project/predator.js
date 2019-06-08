@@ -2,6 +2,7 @@ class Predator extends Creature {
     constructor(x, y) {
         super(x, y);
         this.energy = Math.round(Math.random() * 6);
+        this.index = 3;
         this.directions = [
             [this.x + 1, this.y + 1],
             [this.x + 2, this.y + 2],
