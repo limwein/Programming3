@@ -9,7 +9,6 @@ app.get('/', function (req, res) {
     res.redirect('index.html');
 });
 server.listen(3000);
-
 io.on('connection', function (socket) {
     for (var i in messages) {
         io.sockets.emit("display message", messages[i]);

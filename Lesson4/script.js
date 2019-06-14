@@ -10,18 +10,15 @@ function main() {
             socket.emit("send message", val);
         }
     }
-}
+    button.onclick = handleSubmit;
+    function handleMessage(msg) {
+        var p = document.createElement('p');
+        p.innerText = msg;
+        chatDiv.appendChild(p);
+        input.value = "";
+    }
 
-button.onclick = handleSubmit;
-
-function handleMessage(msg) {
-    var p = document.createElement('p');
-    p.innerText = msg;
-    chatDiv.appendChild(p);
-    input.value = "";
-}
-
-socket.on('display message', handleMessage);
-// main closing bracket
+    socket.on('display message', handleMessage);
+} // main closing bracket
 
 window.onload = main;   
