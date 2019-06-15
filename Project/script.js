@@ -13,8 +13,8 @@ let randomMatrix = (n) => {
                 matrix[i][j] = vr2 >= 0.6 ? 2 : 0;
             }
             if (matrix[i][j] == 1) {
-                let vr2 = Math.random();
-                matrix[i][j] = vr2 >= 0.5 ? 1 : 0;
+                let vr3 = Math.random();
+                matrix[i][j] = vr3 >= 0.5 ? 1 : 0;
             }
         }
     }

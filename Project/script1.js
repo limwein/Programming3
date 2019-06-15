@@ -1,6 +1,9 @@
 function setup() {
+    
     var socket = io();
+
     var side = 30;
+    
     var matrix = [];
 
     let grassCountElement = document.getElementById('grassCount');

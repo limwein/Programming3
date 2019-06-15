@@ -1,5 +1,7 @@
 let Creature = require("./creature");
-let random = require("./random");
+let GrassEater = require("./GrassEater");
+let Predator = require("./Predator");
+var random = require("./random");
 module.exports = class Beast extends Creature {
     constructor(x, y) {
         super(x, y);
